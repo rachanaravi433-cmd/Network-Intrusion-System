@@ -1,0 +1,200 @@
+POST /api/run cmd=cmd.exe /c dir HTTP/1.1 Host: portal.edu
+GET /login?sort=price&page=3 HTTP/1.1 Host: example.com
+POST /images/logo.png?id=42 HTTP/1.1 Host: portal.edu
+GET /download?file=../../../etc/passwd HTTP/1.1 Host: api.demo.org
+POST /products?category=books&lang=en&page=3 HTTP/1.1 Host: portal.edu
+GET /download?q=laptop&city=Bengaluru&lang=en HTTP/1.1 Host: api.demo.org
+GET /index.html?file=report.pdf&sort=price HTTP/1.1 Host: example.com
+GET /blog/post-12?q=laptop&page=3&user=alice HTTP/1.1 Host: example.com
+GET /blog/post-12?comment=nice+product&sort=price&city=Bengaluru HTTP/1.1 Host: api.demo.org
+GET /index.html?name=bob&city=Bengaluru HTTP/1.1 Host: api.demo.org
+POST /comment body=<scr ipt> HTTP/1.1
+POST /about?category=books&q=laptop&city=Bengaluru HTTP/1.1 Host: api.demo.org
+POST /index.html?name=bob&user=alice HTTP/1.1 Host: api.demo.org
+GET /download?file=../../../etc/passwd HTTP/1.1 Host: portal.edu
+POST /comment body=<script>alert(document.cookie)</script> HTTP/1.1 Host: api.demo.org
+GET /x?a=1 Union Select 1; Drop Table logs; HTTP/1.1 Host: portal.edu
+POST /download?token=a1b2c3 HTTP/1.1 Host: example.com
+GET /index.html?id=42&page=3&category=books HTTP/1.1 Host: api.demo.org
+POST /login?page=3&sort=price&name=bob HTTP/1.1 Host: shop.local
+POST /index.html?token=a1b2c3&id=42&sort=price HTTP/1.1 Host: example.com
+GET /products?id=1 UNION SELECT username,password FROM users HTTP/1.1 Host: api.demo.org
+POST /login?sort=price&page=3&category=books HTTP/1.1 Host: portal.edu
+GET /contact?sort=price&q=laptop&id=42 HTTP/1.1 Host: api.demo.org
+GET /about?q=laptop HTTP/1.1 Host: portal.edu
+POST /login?page=3&sort=price&city=Bengaluru HTTP/1.1 Host: shop.local
+POST /contact?page=3&token=a1b2c3&name=bob HTTP/1.1 Host: shop.local
+GET /blog/how-to-drop-a-table-in-sql HTTP/1.1
+POST /index.html?lang=en&comment=nice+product HTTP/1.1 Host: api.demo.org
+GET /contact?token=a1b2c3&category=books&city=Bengaluru HTTP/1.1 Host: portal.edu
+GET /blog/post-12?name=bob&sort=price HTTP/1.1 Host: shop.local
+GET /profile?page=3&city=Bengaluru&category=books HTTP/1.1 Host: example.com
+GET /api/users?file=report.pdf&city=Bengaluru&id=42 HTTP/1.1 Host: shop.local
+GET /search?q=x; DROP TABLE users;-- HTTP/1.1 Host: shop.local
+POST /images/logo.png?comment=nice+product&id=42 HTTP/1.1 Host: portal.edu
+GET /profile?user=alice HTTP/1.1 Host: api.demo.org
+POST /api/run cmd=cmd.exe&q=<SCRIPT>x</SCRIPT>&f=../etc/passwd HTTP/1.1
+GET /products?id=1 UNION SELECT username,password FROM users HTTP/1.1 Host: shop.local
+GET /login?user=alice&lang=en HTTP/1.1 Host: portal.edu
+GET /download?comment=nice+product&city=Bengaluru HTTP/1.1 Host: portal.edu
+GET /profile?lang=en&page=3&name=bob HTTP/1.1 Host: api.demo.org
+GET /login?id=42 HTTP/1.1 Host: portal.edu
+GET /images/logo.png?category=books&comment=nice+product HTTP/1.1 Host: example.com
+GET /download?id=42&file=report.pdf HTTP/1.1 Host: shop.local
+GET /products?page=3&q=laptop HTTP/1.1 Host: example.com
+GET /contact?city=Bengaluru HTTP/1.1 Host: example.com
+GET /profile?file=report.pdf HTTP/1.1 Host: portal.edu
+POST /images/logo.png?token=a1b2c3&page=3&lang=en HTTP/1.1 Host: example.com
+POST /download?comment=nice+product&page=3 HTTP/1.1 Host: portal.edu
+POST /api/run cmd=cmd.exe /c dir HTTP/1.1 Host: shop.local
+GET /images/logo.png?q=laptop HTTP/1.1 Host: shop.local
+GET /products?page=3&lang=en HTTP/1.1 Host: shop.local
+POST /comment body=<script>alert(document.cookie)</script> HTTP/1.1 Host: api.demo.org
+GET /products?id=1 UNION SELECT username,password FROM users HTTP/1.1 Host: api.demo.org
+GET /about?sort=price&user=alice HTTP/1.1 Host: portal.edu
+GET /about?name=bob&page=3 HTTP/1.1 Host: api.demo.org
+GET /profile?sort=price HTTP/1.1 Host: api.demo.org
+POST /contact?city=Bengaluru&file=report.pdf HTTP/1.1 Host: portal.edu
+POST /api/run cmd=cmd.exe&q=<SCRIPT>x</SCRIPT>&f=../etc/passwd HTTP/1.1
+GET /products?id=1 UNION SELECT username,password FROM users HTTP/1.1 Host: example.com
+POST /index.html?token=a1b2c3&q=laptop&lang=en HTTP/1.1 Host: shop.local
+GET /index.html?token=a1b2c3&q=laptop&user=alice HTTP/1.1 Host: shop.local
+GET /index.html?city=Bengaluru&category=books HTTP/1.1 Host: example.com
+POST /search?name=bob&token=a1b2c3&file=report.pdf HTTP/1.1 Host: example.com
+GET /index.html?page=3 HTTP/1.1 Host: shop.local
+POST /index.html?page=3&comment=nice+product HTTP/1.1 Host: shop.local
+GET /x?a=1 Union Select 1; Drop Table logs; HTTP/1.1 Host: portal.edu
+POST /index.html?lang=en&id=42 HTTP/1.1 Host: api.demo.org
+POST /index.html?sort=price&file=report.pdf HTTP/1.1 Host: api.demo.org
+GET /search?sort=price&user=alice&page=3 HTTP/1.1 Host: example.com
+GET /download?page=3&id=42&name=bob HTTP/1.1 Host: api.demo.org
+GET /products?id=1 UNION SELECT username,password FROM users HTTP/1.1 Host: api.demo.org
+GET /about?city=Bengaluru HTTP/1.1 Host: shop.local
+POST /images/logo.png?lang=en&name=bob&token=a1b2c3 HTTP/1.1 Host: portal.edu
+POST /login?lang=en&city=Bengaluru&category=books HTTP/1.1 Host: example.com
+GET /about?id=42 HTTP/1.1 Host: api.demo.org
+POST /comment body=<script>alert(document.cookie)</script> HTTP/1.1 Host: shop.local
+GET /download?token=a1b2c3 HTTP/1.1 Host: portal.edu
+GET /download?file=../../../etc/passwd HTTP/1.1 Host: portal.edu
+GET /about?page=3&sort=price&q=laptop HTTP/1.1 Host: api.demo.org
+GET /search?q=laptop&file=report.pdf HTTP/1.1 Host: portal.edu
+GET /products?id=1 union select null,null-- HTTP/1.1 Host: portal.edu
+GET /index.html?sort=price&name=bob&comment=nice+product HTTP/1.1 Host: api.demo.org
+POST /comment body=<script>alert(document.cookie)</script> HTTP/1.1 Host: api.demo.org
+POST /index.html?page=3&category=books HTTP/1.1 Host: api.demo.org
+POST /cart?token=a1b2c3&name=bob&comment=nice+product HTTP/1.1 Host: example.com
+POST /profile?token=a1b2c3&file=report.pdf&category=books HTTP/1.1 Host: api.demo.org
+GET /images/logo.png?token=a1b2c3&user=alice&city=Bengaluru HTTP/1.1 Host: api.demo.org
+GET /x?a=1 Union Select 1; Drop Table logs; HTTP/1.1 Host: example.com
+GET /download?user=alice HTTP/1.1 Host: api.demo.org
+POST /cart?city=Bengaluru&token=a1b2c3&category=books HTTP/1.1 Host: portal.edu
+GET /x?a=1 Union Select 1; Drop Table logs; HTTP/1.1 Host: example.com
+POST /api/run cmd=cmd.exe&q=<SCRIPT>x</SCRIPT>&f=../etc/passwd HTTP/1.1
+POST /comment body=<script>alert(document.cookie)</script> HTTP/1.1 Host: portal.edu
+GET /download?id=42 HTTP/1.1 Host: api.demo.org
+POST /comment body=<script>alert(document.cookie)</script> HTTP/1.1 Host: example.com
+GET /login?file=report.pdf&lang=en&comment=nice+product HTTP/1.1 Host: api.demo.org
+GET /login?id=42&token=a1b2c3&q=laptop HTTP/1.1 Host: portal.edu
+GET /cart?city=Bengaluru&file=report.pdf&page=3 HTTP/1.1 Host: shop.local
+POST /about?file=report.pdf&sort=price HTTP/1.1 Host: example.com
+POST /blog/post-12?token=a1b2c3&id=42 HTTP/1.1 Host: shop.local
+GET /products?id=1 union select null,null-- HTTP/1.1 Host: example.com
+POST /download?comment=nice+product&file=report.pdf HTTP/1.1 Host: portal.edu
+POST /login?user=alice HTTP/1.1 Host: api.demo.org
+GET /images/logo.png?sort=price&comment=nice+product&lang=en HTTP/1.1 Host: example.com
+GET /x?a=1 Union Select 1; Drop Table logs; HTTP/1.1 Host: api.demo.org
+POST /login?token=a1b2c3&id=42&page=3 HTTP/1.1 Host: shop.local
+POST /images/logo.png?category=books&id=42 HTTP/1.1 Host: api.demo.org
+GET /search?q=union+select HTTP/1.1 Host: example.com
+POST /api/run cmd=cmd.exe /c dir HTTP/1.1 Host: api.demo.org
+POST /search?comment=nice+product&sort=price&name=bob HTTP/1.1 Host: portal.edu
+POST /index.html?sort=price HTTP/1.1 Host: portal.edu
+POST /about?comment=nice+product&lang=en&name=bob HTTP/1.1 Host: api.demo.org
+POST /profile?lang=en&page=3 HTTP/1.1 Host: shop.local
+GET /api/users?page=3 HTTP/1.1 Host: portal.edu
+POST /index.html?city=Bengaluru HTTP/1.1 Host: api.demo.org
+POST /cart?category=books&token=a1b2c3 HTTP/1.1 Host: api.demo.org
+POST /products?user=alice HTTP/1.1 Host: api.demo.org
+POST /index.html?name=bob&token=a1b2c3&user=alice HTTP/1.1 Host: api.demo.org
+GET /search?id=42 HTTP/1.1 Host: example.com
+POST /contact?user=alice HTTP/1.1 Host: api.demo.org
+POST /cart?page=3 HTTP/1.1 Host: portal.edu
+POST /api/run cmd=cmd.exe&q=<SCRIPT>x</SCRIPT>&f=../etc/passwd HTTP/1.1
+GET /blog/post-12?comment=nice+product&city=Bengaluru HTTP/1.1 Host: example.com
+POST /login user=admin' OR '1'='1&pass=x HTTP/1.1 Host: example.com
+GET /products?id=1 UNION SELECT username,password FROM users HTTP/1.1 Host: shop.local
+POST /profile?token=a1b2c3&sort=price HTTP/1.1 Host: example.com
+POST /search?token=a1b2c3&sort=price HTTP/1.1 Host: example.com
+GET /download?file=../../../etc/passwd HTTP/1.1 Host: api.demo.org
+POST /api/run cmd=cmd.exe /c dir HTTP/1.1 Host: example.com
+GET /profile?name=bob HTTP/1.1 Host: portal.edu
+POST /about?name=bob HTTP/1.1 Host: example.com
+GET /login?token=a1b2c3&id=42&sort=price HTTP/1.1 Host: portal.edu
+GET /login?id=42&city=Bengaluru HTTP/1.1 Host: portal.edu
+POST /cart?user=alice HTTP/1.1 Host: api.demo.org
+GET /run?cmd=cmd_exe HTTP/1.1
+GET /x?a=1 Union Select 1; Drop Table logs; HTTP/1.1 Host: portal.edu
+GET /download?user=alice HTTP/1.1 Host: shop.local
+POST /api/run cmd=cmd.exe&q=<SCRIPT>x</SCRIPT>&f=../etc/passwd HTTP/1.1
+GET /products?id=1 union select null,null-- HTTP/1.1 Host: api.demo.org
+POST /search?sort=price HTTP/1.1 Host: api.demo.org
+POST /api/run cmd=cmd.exe&q=<SCRIPT>x</SCRIPT>&f=../etc/passwd HTTP/1.1
+GET /images/logo.png?city=Bengaluru&user=alice HTTP/1.1 Host: api.demo.org
+GET /contact?sort=price HTTP/1.1 Host: api.demo.org
+GET /index.html?name=bob HTTP/1.1 Host: example.com
+GET /search?q=laptop&id=42 HTTP/1.1 Host: portal.edu
+POST /about?city=Bengaluru&sort=price&lang=en HTTP/1.1 Host: shop.local
+POST /login?user=alice HTTP/1.1 Host: shop.local
+GET /about?lang=en&user=alice&page=3 HTTP/1.1 Host: shop.local
+POST /profile?comment=nice+product&q=laptop&user=alice HTTP/1.1 Host: api.demo.org
+GET /blog/post-12?city=Bengaluru&name=bob&page=3 HTTP/1.1 Host: api.demo.org
+GET /download?category=books HTTP/1.1 Host: api.demo.org
+GET /x?a=1 Union Select 1; Drop Table logs; HTTP/1.1 Host: api.demo.org
+GET /download?category=books&id=42 HTTP/1.1 Host: api.demo.org
+GET /download?file=../../../etc/passwd HTTP/1.1 Host: api.demo.org
+POST /search?city=Bengaluru&user=alice&id=42 HTTP/1.1 Host: portal.edu
+POST /images/logo.png?city=Bengaluru&page=3&id=42 HTTP/1.1 Host: portal.edu
+GET /cart?comment=nice+product&category=books&city=Bengaluru HTTP/1.1 Host: portal.edu
+POST /login user=admin' OR '1'='1&pass=x HTTP/1.1 Host: portal.edu
+POST /blog/post-12?lang=en&category=books&name=bob HTTP/1.1 Host: portal.edu
+GET /products?user=alice HTTP/1.1 Host: portal.edu
+GET /blog/post-12?q=laptop HTTP/1.1 Host: shop.local
+GET /login?page=3&file=report.pdf HTTP/1.1 Host: shop.local
+GET /search?q=x; DROP TABLE users;-- HTTP/1.1 Host: shop.local
+GET /search?q=x; DROP TABLE users;-- HTTP/1.1 Host: api.demo.org
+GET /about?id=42&page=3&user=alice HTTP/1.1 Host: api.demo.org
+GET /cart?page=3&name=bob HTTP/1.1 Host: api.demo.org
+POST /download?sort=price HTTP/1.1 Host: portal.edu
+POST /contact?lang=en&id=42&category=books HTTP/1.1 Host: portal.edu
+GET /contact?q=laptop HTTP/1.1 Host: portal.edu
+GET /blog/post-12?page=3&comment=nice+product HTTP/1.1 Host: portal.edu
+POST /api/users?name=bob&file=report.pdf&q=laptop HTTP/1.1 Host: shop.local
+POST /login?page=3&comment=nice+product&id=42 HTTP/1.1 Host: portal.edu
+POST /index.html?lang=en HTTP/1.1 Host: shop.local
+GET /index.html?user=alice&id=42&category=books HTTP/1.1 Host: example.com
+GET /about?city=Bengaluru&comment=nice+product&lang=en HTTP/1.1 Host: api.demo.org
+GET /api/users?file=report.pdf&comment=nice+product&lang=en HTTP/1.1 Host: example.com
+POST /download?id=42 HTTP/1.1 Host: shop.local
+POST /profile?city=Bengaluru&page=3&token=a1b2c3 HTTP/1.1 Host: api.demo.org
+GET /profile?user=alice&page=3&comment=nice+product HTTP/1.1 Host: portal.edu
+GET /products?sort=price&page=3&comment=nice+product HTTP/1.1 Host: shop.local
+POST /products?comment=nice+product HTTP/1.1 Host: example.com
+GET /api/users?lang=en&sort=price HTTP/1.1 Host: portal.edu
+GET /login?name=bob&user=alice HTTP/1.1 Host: example.com
+POST /blog/post-12?user=alice HTTP/1.1 Host: shop.local
+POST /about?name=bob&q=laptop HTTP/1.1 Host: example.com
+POST /contact?page=3&name=bob&comment=nice+product HTTP/1.1 Host: api.demo.org
+GET /search?q=x; DROP TABLE users;-- HTTP/1.1 Host: portal.edu
+POST /contact?name=bob HTTP/1.1 Host: portal.edu
+GET /products?id=1 UNION SELECT username,password FROM users HTTP/1.1 Host: api.demo.org
+GET /download?comment=nice+product&category=books&page=3 HTTP/1.1 Host: portal.edu
+GET /search?q=x; DROP TABLE users;-- HTTP/1.1 Host: api.demo.org
+POST /images/logo.png?file=report.pdf&comment=nice+product&token=a1b2c3 HTTP/1.1 Host: portal.edu
+GET /index.html?sort=price&page=3&comment=nice+product HTTP/1.1 Host: shop.local
+POST /images/logo.png?page=3&sort=price&id=42 HTTP/1.1 Host: example.com
+POST /cart?user=alice HTTP/1.1 Host: shop.local
+POST /about?city=Bengaluru&page=3&file=report.pdf HTTP/1.1 Host: api.demo.org
+POST /api/users?name=bob HTTP/1.1 Host: portal.edu
+GET /docs?topic=etc/passwd HTTP/1.1
+POST /cart?page=3 HTTP/1.1 Host: example.com
+POST /search?id=42&page=3 HTTP/1.1 Host: portal.edu

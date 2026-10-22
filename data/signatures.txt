@@ -1,0 +1,6 @@
+UNION SELECT
+DROP TABLE
+../etc/passwd
+cmd.exe
+<script>
+' OR '1'='1
