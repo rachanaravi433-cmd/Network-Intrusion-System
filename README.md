@@ -112,15 +112,7 @@ TODO (team): paste the table from your own machine here. Timings differ between 
 - A match can be a false positive (for example, a blog post that contains `DROP TABLE`).
 - Matching is on single payloads. Signatures split across two separate payloads are not detected (the automaton state could be carried between chunks as an extension).
 
-## Team
 
-| Member | GitHub | Main modules |
-|---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
-=======
 # Network-Intrusion-System
 This project is an advanced Data Structures and Algorithms (DSA) implementation of a Network Intrusion Detection System (NIDS) designed to scan incoming web traffic for malicious payloads.
 >>>>>>> fd4ec6e424cd5bbf5a8330a663513cf3accfc412
