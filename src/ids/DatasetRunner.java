@@ -1,43 +1,98 @@
 package ids;
 
-/** Runs the Aho-Corasick scanner over the built-in Dataset and checks every line
- *  against the expected match count. Run: java -cp out ids.DatasetRunner [-v] */
+/**
+ * Runs automated tests over the built-in Dataset.
+ * Can be run independently or called from Main.java.
+ */
 public final class DatasetRunner {
+
     public static void main(String[] args) {
         boolean verbose = args.length > 0 && args[0].equals("-v");
+
         AhoCorasick automaton = new AhoCorasick();
-        for (String s : Dataset.SIGNATURES) {
-            automaton.addSignature(s);
+
+        for (String signature : Dataset.SIGNATURES) {
+            automaton.addSignature(signature);
         }
+
+        run(automaton, verbose);
+    }
+
+    /**
+     * Runs the dataset tests using the supplied automaton.
+     * This method can be called directly from Main.java.
+     */
+    public static void run(AhoCorasick automaton, boolean verbose) {
+
         PayloadScanner scanner = new PayloadScanner(automaton);
-        int flagged = 0, totalMatches = 0, wrong = 0;
+
+        int flagged = 0;
+        int totalMatches = 0;
+        int wrong = 0;
         long nanos = 0;
+
+        System.out.println();
+        System.out.println("======= AUTOMATED DATASET TESTING =======");
+
         for (int i = 0; i < Dataset.PAYLOADS.length; i++) {
-            ScanResult r = scanner.scan(Dataset.PAYLOADS[i]);
-            nanos += r.getScanNanos();
-            totalMatches += r.matchCount();
-            if (r.isDetected()) {
+
+            String payload = Dataset.PAYLOADS[i];
+            ScanResult result = scanner.scan(payload);
+
+            nanos += result.getScanNanos();
+            totalMatches += result.matchCount();
+
+            if (result.isDetected()) {
                 flagged++;
             }
-            if (r.matchCount() != Dataset.EXPECTED[i]) {
+
+            if (result.matchCount() != Dataset.EXPECTED[i]) {
                 wrong++;
-                System.out.println("MISMATCH line " + (i + 1) + ": expected "
-                        + Dataset.EXPECTED[i] + ", got " + r.matchCount());
+
+                System.out.println(
+                        "MISMATCH line " + (i + 1)
+                        + ": expected " + Dataset.EXPECTED[i]
+                        + ", got " + result.matchCount());
             }
-            if (verbose && r.isDetected()) {
-                System.out.println("Line " + (i + 1) + ": " + Dataset.PAYLOADS[i]);
-                for (Match m : r.sortedMatches()) {
-                    System.out.println("    " + m.getSignature() + " [" + m.getStart() + ".." + m.getEnd() + "]");
+
+            if (verbose && result.isDetected()) {
+                System.out.println(
+                        "Line " + (i + 1) + ": " + payload);
+
+                for (Match match : result.sortedMatches()) {
+                    System.out.println(
+                            "    " + match.getSignature()
+                            + " [" + match.getStart()
+                            + ".." + match.getEnd() + "]");
                 }
             }
         }
-        System.out.println("Signatures      : " + automaton.signatureCount() + " (" + automaton.stateCount() + " states)");
-        System.out.println("Payloads        : " + Dataset.PAYLOADS.length);
+
+        System.out.println("-----------------------------------------");
+        System.out.println("Signatures      : "
+                + automaton.signatureCount());
+        System.out.println("Automaton states: "
+                + automaton.stateCount());
+        System.out.println("Payloads        : "
+                + Dataset.PAYLOADS.length);
         System.out.println("Flagged         : " + flagged);
-        System.out.println("Clean           : " + (Dataset.PAYLOADS.length - flagged));
+        System.out.println("Clean           : "
+                + (Dataset.PAYLOADS.length - flagged));
         System.out.println("Total matches   : " + totalMatches);
-        System.out.println("Total scan time : " + (nanos / 1000000.0) + " ms");
-        System.out.println(wrong == 0 ? "RESULT: ALL " + Dataset.PAYLOADS.length + " LINES CORRECT"
-                : "RESULT: " + wrong + " LINE(S) WRONG");
+
+        System.out.printf(
+                "Total scan time : %.3f ms%n",
+                nanos / 1000000.0);
+
+        if (wrong == 0) {
+            System.out.println(
+                    "RESULT: ALL " + Dataset.PAYLOADS.length
+                    + " LINES CORRECT");
+        } else {
+            System.out.println(
+                    "RESULT: " + wrong + " LINE(S) WRONG");
+        }
+
+        System.out.println("=========================================");
     }
 }
